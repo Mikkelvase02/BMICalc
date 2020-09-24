@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en"xmlns:th="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" href="FormStyle.css">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Vase's BMI Calculator</title>
 </head>
 <body>
 
-<form action = "/calc" method = post>
+<h1>
 
-    <input type  ="text" name ="num1">
-    <input type = "text" name = "num2">
-    <input type="submit" value="OK">
-</form>
+    The Remarkable calculator
+
+</h1>
+
+
+<div class="container6">
+<img src="./image/fatguy.jpg">
+</div>
+
+
+<div class="container6">
+
+    <form action = "/calc" method = post>
+
+        <input type  ="text" name ="weight" value="Enter your weight">
+        <input type = "text" name = "height" value="Enter height" size="100">
+        <input type="submit" value="OK">
+    </form>
+
+
+
+</div>
+
 
 </body>
 </html>

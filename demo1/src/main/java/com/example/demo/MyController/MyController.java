@@ -15,16 +15,15 @@ public class MyController {
     @GetMapping("/")
 
     public String welcome() {
-       // model.addAttribute("msg" , "Hello " + name );
         return "calculator" ;
     }
 
 
 
     @PostMapping("/calc")
-    public String calculator( @RequestParam int num1 , @RequestParam int num2 , Model model ) {
-        int num3 = num1 + num2;
-        model.addAttribute("calc" , num3);
+    public String calculator( @RequestParam double weight , @RequestParam double height , Model model ) {
+        double bmiresult = (weight / (height * height)) ;
+        model.addAttribute("calc" , bmiresult);
         return "result" ;
     }
 
